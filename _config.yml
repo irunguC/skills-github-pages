@@ -1,0 +1,44 @@
+# Site settings
+title: "Nexus international."
+description: "A Company providing coding, tech, and tutorial services"
+url: "https://irunguc.github.io"   # Your site URL
+baseurl: ""                           # Leave empty for root, or "/projectname" for project pages
+
+# Author info
+author:
+  name: "Irungu C"
+  email: "2irunguc@gmail.com"
+
+# Theme settings
+theme: minima   # Default Jekyll theme
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+# Exclude files from build
+exclude:
+  - README.md
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+
+# Include additional files
+include:
+  - _pages
+
+# Social links (for themes that support them)
+social_links:
+  github: "https://github.com/myusername"
+  twitter: "https://twitter.com/myusername"
+
+# Custom variables (you can use these in templates)
+custom_var: "This is a custom value"
